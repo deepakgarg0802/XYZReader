@@ -4,31 +4,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:fitsSystemWindows="true">
+    >
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:background="?colorPrimary"
         app:elevation="8dp"
-        android:id="@+id/appbar">
+        android:id="@+id/app_bar_layout">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
-            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:theme="@style/Theme.Bacon.AppBarOverlay"
             android:layout_marginLeft="@dimen/list_toolbar_side_margin"
             android:layout_marginRight="@dimen/list_toolbar_side_margin"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
-            android:layout_gravity="center_vertical"
-            android:background="?attr/colorPrimary">
+            android:layout_gravity="bottom"
+            android:background="?attr/colorPrimary"
+            comment="app:layout_collapseMode=pin">
 
-            <ImageView
+            <!--ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/logo"
                 android:layout_gravity="center_vertical"
-                android:contentDescription="@string/app_name" />
+                android:contentDescription="@string/app_name" -->
 
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
@@ -36,7 +37,6 @@
     <FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C5CAE9"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     app:layout_scrollFlags="scroll|enterAlways">
 
