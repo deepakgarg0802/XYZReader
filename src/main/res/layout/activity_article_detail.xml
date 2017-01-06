@@ -37,7 +37,8 @@
                 android:layout_marginRight="@dimen/list_toolbar_side_margin"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                 app:contentInsetStart="72dp"
-                app:layout_collapseMode="pin"/>
+                app:layout_collapseMode="pin"
+                android:navigationIcon="@drawable/ic_arrow_back"/>
 
 
         </android.support.design.widget.CollapsingToolbarLayout>
